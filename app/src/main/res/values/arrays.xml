@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort_criterion_name">
+        <item>"popularity"</item>
+        <item>"release date"</item>
+        <item>"revenue"</item>
+        <item>"primary release date"</item>
+        <item>"original title"</item>
+        <item>"vote average"</item>
+        <item>"vote count</item>
+    </string-array>
+    <string-array name="sort_criterion_value">
+        <item>"popularity"</item>
+        <item>"release_date"</item>
+        <item>"revenue"</item>
+        <item>"primary_release_date"</item>
+        <item>"original_title"</item>
+        <item>"vote_average"</item>
+        <item>"vote_count</item>
+    </string-array>
+    <string-array name="language_value">
+        <item>"en"</item>
+        <item>"zh"</item>
+        <item>"ja"</item>
+    </string-array>
+    <string-array name="language_name">
+        <item>"English"</item>
+        <item>"Chinese"</item>
+        <item>"Japanese"</item>
+    </string-array>
+</resources>

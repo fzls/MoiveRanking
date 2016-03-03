@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/movie_item"
+    android:paddingBottom="@dimen/movie_bottom_margin"
+    android:paddingLeft="@dimen/movie_left_margin"
+    android:paddingRight="@dimen/movie_right_margin"
+    android:paddingTop="@dimen/movie_top_margin">
+    <ImageView
+        android:layout_width="185dp"
+        android:layout_height="278dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/movie_poster"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/movie_name"
+        android:layout_below="@id/movie_poster"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

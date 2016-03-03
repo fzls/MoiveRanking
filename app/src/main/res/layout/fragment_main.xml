@@ -1,0 +1,54 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:tag="movie_fragment"
+    tools:context="com.fzls.moiveranking.MainActivity">
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/movie_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="150dp"
+            android:horizontalSpacing="0dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="0dp"
+            tools:context=".MainActivityFragment">
+        </GridView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/nextpage_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_navigate_next_black_24dp"
+        android:clickable="true"
+        android:adjustViewBounds="false" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/previouspage_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_navigate_before_black_24dp"
+        android:clickable="true" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginRight="160dp"/>
+</android.support.design.widget.CoordinatorLayout>
+
